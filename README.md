@@ -1,17 +1,23 @@
-FemVoice Studio — Intelligent Voice Feminization Biofeedback System
+👍
 
-FemVoice Studio is a real-time, clinically-informed voice training platform designed to support safe, effective, and adaptive voice feminization through modern biofeedback technology.
+Supert — da har jeg samlet alt til én helhetlig README.md som du kan legge rett på GitHub (eller lagre lokalt).
 
-Unlike traditional pitch-focused voice apps, FemVoice Studio prioritizes resonance shaping, stability, and vocal health — the core elements that determine perceived vocal femininity.
+Nedenfor er den ferdige versjonen, profesjonell, tydelig på målgruppen, klinisk solid og ærlig om hva som er ferdig og hva som kommer.
 
-🌱 Key Principles
+🎙 FemVoice Studio — Intelligent Voice Feminization Biofeedback System
 
-✔ Resonance-first training (formant-based, not pitch chasing)
-✔ Adaptive progression per user
-✔ Real-time biofeedback
-✔ Vocal health protection
-✔ Research-based clinical framework
-✔ Motor learning focused design
+FemVoice Studio is a real-time, clinically-informed voice training platform designed specifically to support transfeminine individuals (trans girls and women) in developing a more feminine speaking voice in a safe, adaptive, and sustainable way.
+
+Unlike traditional pitch-focused voice apps, FemVoice Studio prioritizes vocal resonance shaping, tonal stability, and vocal health — the key factors that determine perceived vocal femininity.
+
+🌱 Core Training Philosophy
+
+✔ Resonance-first feminization (formant-based, not pitch chasing)
+✔ Adaptive progression per individual user
+✔ Real-time biofeedback learning
+✔ Vocal health protection & strain prevention
+✔ Intelligent hydration support (in development)
+✔ Research-based aggregate clinical framework
 
 🧠 Core Technology
 
@@ -29,7 +35,7 @@ Event-driven service architecture
 
 Clean Architecture with dependency injection
 
-Unit tested adaptive logic
+Comprehensive unit testing
 
 🔬 Core Systems
 🎯 ResonanceProxyEngine
@@ -38,7 +44,7 @@ Real-time extraction of formant frequencies (F1/F2/F3), spectral brightness, and
 
 📊 FemVoiceScoreEngine
 
-Adaptive composite scoring with personal baselines, trend detection, plateau and regression monitoring.
+Adaptive composite scoring with personal baselines, long-term trend detection, plateau and regression monitoring.
 
 🧬 ComfortZoneController
 
@@ -46,15 +52,28 @@ Dynamic pitch safety boundaries with automatic expansion, contraction, and strai
 
 🤖 SmartCoachEngine
 
-Context-aware real-time coaching integrated directly into exercises.
+Context-aware real-time coaching integrated directly into training exercises.
 
 🎧 Real-Time Visual Feedback
 
-Pitch graph
+Live pitch graph
 
-Spectrogram with resonance intelligence (in development)
+Live spectrogram with resonance intelligence
 
 Stability and comfort indicators
+
+💧 Vocal Health & Hydration Support
+
+FemVoice Studio includes built-in vocal health monitoring to help prevent strain and fatigue during training sessions.
+
+A planned hydration reminder system will intelligently prompt users to drink water when acoustic signals indicate dryness or increased vocal effort — based on real voice behavior such as:
+
+• rising instability
+• darker resonance patterns
+• increasing strain indicators
+• extended training load
+
+This ensures safe, sustainable voice feminization practice.
 
 📈 Current Development Status
 Module	Status
@@ -63,47 +82,27 @@ ResonanceProxyEngine	✅ Complete
 Adaptive scoring system	✅ Complete
 Comfort zone safety	✅ Complete
 SmartCoach background system	✅ Complete
-Intelligent exercise system	🚧 In progress
+Intelligent exercise biofeedback	🚧 In progress
 Spectrogram intelligence	🚧 In progress
-Hydration & fatigue advisor	🚧 Planned
+Hydration advisor	🚧 Planned
 Long-term progression analytics	🔮 Planned
-🧪 Testing
-
-174+ unit tests passing
-
-No UI-dependent logic in core engines
-
-All real-time systems event-driven and thread-safe
-
 🎯 Why FemVoice Studio Is Different
 
-Most voice training apps focus only on raising pitch.
+Most voice training apps focus primarily on raising pitch.
 
 FemVoice Studio trains:
 
 ✔ vocal tract resonance
 ✔ tonal stability
 ✔ safe progression
-✔ real-time acoustic feedback
+✔ real-time acoustic awareness
 
 This reflects modern clinical voice feminization research rather than outdated pitch-only models.
-
-🚀 Roadmap Highlights
-
-Intelligent real-time exercise feedback
-
-Spectrogram-based resonance visualization
-
-Inline coaching during training
-
-Adaptive hydration & fatigue protection
-
-Predictive progression modeling
 
 ⚠ Disclaimer
 
 FemVoice Studio is a training support tool and not a replacement for professional speech therapy.
-Users experiencing vocal discomfort should consult a qualified speech-language pathologist.
+Users experiencing vocal discomfort or pain should consult a qualified speech-language pathologist.
 
 🤝 Contributing
 
@@ -113,11 +112,11 @@ Contributions should maintain:
 
 UI-independent core logic
 
-Dependency injection
+dependency injection
 
-Unit test coverage
+unit test coverage
 
-Thread-safe real-time processing
+thread-safe real-time processing
 
 📄 License
 
