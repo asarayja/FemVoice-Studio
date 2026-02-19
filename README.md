@@ -2,7 +2,7 @@ FemVoice Studio — Intelligent Voice Feminization Biofeedback System
 
 FemVoice Studio is a real-time, clinically-informed voice training platform designed specifically to support transfeminine individuals (trans girls and women) in developing a more feminine speaking voice in a safe, adaptive, and sustainable way.
 
-Unlike traditional pitch-focused voice apps, FemVoice Studio prioritizes vocal resonance shaping, tonal stability, and vocal health — the primary factors influencing perceived vocal femininity.
+Unlike traditional pitch-focused voice apps, FemVoice Studio prioritizes vocal resonance shaping, tonal stability, and vocal health — the primary factors influencing perceived vocal femininity. it will be coming out when done
 
 🌱 Core Training Philosophy
 
