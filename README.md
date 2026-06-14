@@ -1,195 +1,166 @@
-FemVoice Studio — Intelligent Voice Feminization Biofeedback System
+# FemVoice Studio
 
-FemVoice Studio is a real-time, clinically-informed voice training platform designed specifically to support transfeminine individuals (trans girls and women) in developing a more feminine speaking voice in a safe, adaptive, and sustainable way.
+FemVoice Studio is a Windows desktop application for voice feminization training. It provides real-time acoustic biofeedback, structured exercises, adaptive coaching, and long-term progress tracking — all running locally on your PC.
 
-Unlike traditional pitch-focused voice apps, FemVoice Studio prioritizes vocal resonance shaping, tonal stability, and vocal health — the primary factors influencing perceived vocal femininity. it will be coming out when done
+The app is built around modern clinical voice research. Rather than focusing on pitch alone, FemVoice Studio trains resonance shaping, tonal stability, intonation variation, and vocal health — the factors that most influence perceived vocal femininity.
 
-🌱 Core Training Philosophy
+> FemVoice Studio is a training support tool. It is not a medical device and does not replace a qualified speech-language pathologist or clinician.
 
-✔ Resonance-first feminization (formant-based, not pitch chasing)
-✔ Adaptive progression per individual user
-✔ Real-time biofeedback learning
-✔ Vocal health protection & strain prevention
-✔ Intelligent hydration support (in development)
-✔ Research-based aggregate clinical framework
+---
 
-🌍 Multilingual Support
+## What It Does
 
-FemVoice Studio is fully localized and currently supports:
+- Captures real-time voice input from your microphone and displays live pitch and resonance feedback.
+- Analyses pitch (Hz), resonance (F1/F2/F3 formants), intonation variation, vocal weight, comfort, and consistency.
+- Provides structured exercises for pitch, resonance, intonation, breathing, and practical speech.
+- Tracks training sessions and scores over time with trend analysis.
+- Adapts training difficulty and focus based on your recent history through SmartCoach.
+- Monitors vocal health signals and prompts rest, hydration, and recovery when needed.
+- Generates PDF, CSV, and JSON reports for personal review or sharing with a professional.
+- Stores all data locally on your computer.
+- Supports light mode, dark mode, and system default themes.
+- Available in 20 languages.
 
-🇬🇧 English
+---
 
-🇳🇴 Norwegian
+## Who It Is For
 
-🇸🇪 Swedish
+FemVoice Studio is primarily designed for transfeminine individuals working toward a more feminine speaking voice. It can also be useful for anyone wanting a structured, self-guided voice practice tool with measurable feedback.
 
-🇩🇰 Danish
+It is not intended to replace clinical voice therapy. Users with vocal health concerns should consult a qualified professional.
 
-🇫🇮 Finnish
+---
 
-🇫🇷 French
+## Core Training Philosophy
 
-🇪🇸 Spanish
+Most voice training apps focus on raising pitch as high as possible. FemVoice Studio takes a different approach.
 
-🇵🇹 Portuguese
+Pitch matters, but perceived femininity is more strongly influenced by **resonance placement**, **tonal stability**, and **intonation variation**. Chasing pitch without building resonance and comfort often leads to strain, fatigue, and unsustainable habits.
 
-🇮🇹 Italian
+FemVoice Studio is designed to:
 
-🇭🇷 Croatian (Hrvatski)
+- Prioritise resonance shaping over pitch chasing.
+- Protect vocal health throughout every session.
+- Build habits that are sustainable over weeks and months.
+- Adapt to each user's individual baseline and progression rate.
+- Discourage pushing, pressing, or forcing the voice.
 
-The localization system is designed to easily expand with additional languages in future updates.
+---
 
-🧠 Core Technology
+## Main Areas
 
-Built with:
+### Dashboard
+The main practice surface. Shows live pitch and resonance feedback, comfort-zone status, current SmartCoach recommendations, session controls, streaks, and quick access to all other tools.
 
-.NET 10
+### Exercise Guide
+A structured library of practice activities organised by focus area and difficulty level. Exercises cover pitch gliding, resonance placement, intonation patterns, breath control, sentence reading, and conversation simulation. Each exercise includes step-by-step guidance, real-time feedback, and safety notes.
 
-WPF with MVVM architecture
+### SmartCoach
+An adaptive coaching system that uses your training history, health signals, and progression data to recommend what to focus on each day. SmartCoach adjusts its suggestions based on recovery status, plateau detection, recent scores, and voice health indicators.
 
-NAudio for real-time audio processing
+### Analysis
+Detailed charts and trend views for pitch, resonance, intonation, vocal weight, comfort, and health-related signals. Includes session summaries, score history, and longitudinal trends. These tools are for training feedback and self-reflection — not clinical diagnosis.
 
-FFT and formant-based acoustic analysis
+### Resonance Analysis
+A dedicated window for formant-based resonance inspection. Displays real-time F1/F2 placement, a resonance timeline, and target area overlays. Useful for understanding resonance patterns and forward placement during practice.
 
-Event-driven service communication
+### Progression
+Shows how your training is developing over time. Tracks level transitions, session consistency, success rates, and whether there is enough data to make meaningful progress estimates.
 
-Clean Architecture with dependency injection
+### Case Review
+Allows you to create, review, and complete structured voice session reviews. Useful for personal reflection or for sharing selected notes with a speech therapist or clinician.
 
-Comprehensive unit test coverage
+### Reports
+Generates exportable summaries in PDF, CSV, or JSON format. Report types include a coaching summary, a clinical progress report, a voice development timeline, and an outcome summary.
 
-🔬 Core Systems
-🎯 ResonanceProxyEngine
+### Settings
+Covers theme, language selection, voice goals, training frequency, accessibility options (calm mode, reduced visual feedback), microphone calibration, monitoring your own voice in real time, backup and restore, and database management.
 
-Extracts formant frequencies (F1/F2/F3), spectral brightness, spacing metrics, and stability to quantify feminine vocal resonance in real time.
+---
 
-📊 FemVoiceScoreEngine
+## Supported Languages
 
-Adaptive composite scoring with personal baselines, long-term trend detection, plateau and regression monitoring.
+FemVoice Studio is fully localised and currently available in:
 
-🧬 ComfortZoneController
+🇬🇧 English · 🇳🇴 Norwegian · 🇸🇪 Swedish · 🇩🇰 Danish · 🇫🇮 Finnish  
+🇫🇷 French · 🇪🇸 Spanish · 🇵🇹 Portuguese (Brazil) · 🇮🇹 Italian · 🇭🇷 Croatian  
+🇩🇪 German · 🇳🇱 Dutch · 🇵🇱 Polish · 🇨🇿 Czech · 🇭🇺 Hungarian  
+🇷🇴 Romanian · 🇹🇷 Turkish · 🇺🇦 Ukrainian · 🇷🇺 Russian · 🇸🇦 Arabic · 🇬🇷 Greek
 
-Dynamic pitch safety boundaries with automatic expansion, contraction, and strain protection.
+The localisation system is built for easy expansion with additional languages in future releases.
 
-🤖 SmartCoachEngine
+---
 
-Context-aware real-time coaching integrated directly into training exercises.
+## Data and Privacy
 
-🎧 Real-Time Visual Feedback
+FemVoice Studio is local-first. All training data, session history, settings, and notes are stored on your own computer. Nothing is sent to external servers.
 
-Live pitch graph
+Exports and support packages are entirely user-controlled. Avoid including personal identifiers or sensitive health information in exports unless you intend to share them.
 
-Live spectrogram with resonance intelligence
+---
 
-Stability and comfort indicators
+## System Requirements
 
-💧 Vocal Health & Hydration Support
+- Windows 10 (version 1809 or later) or Windows 11
+- .NET Desktop Runtime 10
+- A working microphone
+- A reasonably quiet practice environment
 
-FemVoice Studio includes built-in vocal health monitoring to help prevent strain and fatigue during training sessions.
+---
 
-A planned hydration reminder system will intelligently prompt users to drink water when acoustic signals indicate dryness or increased vocal effort — based on real voice behavior such as:
+## Core Technology
 
-• rising instability
-• darker resonance patterns
-• increasing strain indicators
-• extended training load
+| Component | Details |
+|---|---|
+| Framework | .NET 10, WPF, MVVM |
+| Audio | NAudio — real-time capture and processing |
+| Acoustic analysis | FFT-based pitch detection, formant extraction (F1/F2/F3) |
+| Architecture | Clean Architecture, dependency injection, event-driven services |
+| Data | SQLite via Microsoft.Data.Sqlite |
+| Visualisation | OxyPlot |
+| Reports | QuestPDF |
+| Testing | xUnit with full unit test coverage |
 
-This ensures safe, sustainable voice feminization practice.
+---
 
-📈 Development Status
-Module	Status
-Real-time audio processing	✅ Complete
-ResonanceProxyEngine	✅ Complete
-Adaptive scoring system	✅ Complete
-Comfort zone safety	✅ Complete
-SmartCoach system	✅ Complete
-Intelligent exercise biofeedback	🚧 In progress
-Spectrogram intelligence	🚧 In progress
-Hydration advisor	🚧 Planned
-Long-term analytics	🔮 Planned
-🎯 Why FemVoice Studio Is Different
+## Development Status
 
-Most voice training apps focus only on raising pitch.
+| Module | Status |
+|---|---|
+| Real-time audio processing | ✅ Complete |
+| Resonance analysis (F1/F2/F3) | ✅ Complete |
+| Adaptive scoring system | ✅ Complete |
+| Comfort zone safety controller | ✅ Complete |
+| SmartCoach engine | ✅ Complete |
+| Exercise library | ✅ Complete |
+| Session tracking and progression | ✅ Complete |
+| Report export (PDF/CSV/JSON) | ✅ Complete |
+| Intelligent exercise biofeedback | ✅ Complete |
+| Spectrogram intelligence | ✅ Complete |
+| Hydration advisor | ✅ Complete |
+| Long-term longitudinal analytics | ✅ Complete |
 
-FemVoice Studio trains:
+---
 
-✔ vocal tract resonance
-✔ tonal stability
-✔ safe progression
-✔ real-time acoustic awareness
+## Safety
 
-This reflects modern clinical voice feminization research rather than outdated pitch-only training models.
+Stop or pause immediately if you experience pain, strain, hoarseness, dizziness, or unusual discomfort. The app includes built-in safety systems that monitor vocal load and prompt rest when signals indicate strain — but these are assistive tools, not guarantees.
 
-⚙ Localization Architecture (Technical Overview)
+Use FemVoice Studio as a training aid. For clinical concerns, consult a qualified speech-language pathologist.
 
-FemVoice Studio uses a scalable localization system built on:
+---
 
-🔹 Resource Files (.resx)
+## Contributing
 
-Each supported language has a dedicated resource file:
+FemVoice Studio follows Clean Architecture and event-driven design principles. Contributions should maintain:
 
-Resources/
-  Strings.en.resx
-  Strings.no.resx
-  Strings.sv.resx
-  Strings.da.resx
-  Strings.fi.resx
-  Strings.fr.resx
-  Strings.es.resx
-  Strings.pt.resx
-  Strings.it.resx
-  Strings.hr.resx
+- UI-independent core logic
+- Constructor-injected dependencies
+- Thread-safe real-time processing
+- Unit test coverage for new behaviour
 
+---
 
-Each file contains translated UI strings mapped by shared keys.
+## License
 
-🔹 LocalizationService (DI-based, non-static)
-
-Key features:
-
-• No static singletons
-• Constructor-injected
-• Thread-safe
-• WPF binding support
-• Live language switching
-• Testable with in-memory implementation
-
-Example interface:
-
-public interface ILocalizationService
-{
-    string GetString(string key);
-    void SetLanguage(string languageCode);
-}
-
-🔹 Hybrid Configuration
-
-Default language defined in code
-User preference override via settings
-Persisted per user profile
-
-🔹 Benefits
-
-✔ Easy language expansion
-✔ No UI coupling
-✔ Unit test friendly
-✔ Clean Architecture compliant
-
-⚠ Disclaimer
-
-FemVoice Studio is a training support tool and not a replacement for professional speech therapy.
-Users experiencing vocal discomfort should consult a qualified speech-language pathologist.
-
-🤝 Contributing
-
-This project follows Clean Architecture and event-driven design principles.
-
-Contributions should maintain:
-
-• UI-independent core logic
-• dependency injection
-• unit test coverage
-• thread-safe real-time processing
-
-📄 License
-
-(To be defined)
+To be defined.
