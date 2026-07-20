@@ -114,10 +114,10 @@ Covers theme, language selection, voice goals, training frequency, accessibility
 
 FemVoice Studio is fully localised and currently available in 20 languages:
 
-🇬🇧 English · 🇳🇴 Norwegian · 🇸🇪 Swedish · 🇩🇰 Danish · 🇫🇮 Finnish  
-🇫🇷 French · 🇪🇸 Spanish · 🇵🇹 Portuguese (Brazil) · 🇮🇹 Italian · 🇭🇷 Croatian  
-🇩🇪 German · 🇳🇱 Dutch · 🇵🇱 Polish · 🇨🇿 Czech · 🇭🇺 Hungarian  
-🇷🇴 Romanian · 🇹🇷 Turkish · 🇺🇦 Ukrainian · 🇸🇦 Arabic · 🇬🇷 Greek
+| 🇬🇧 English · 🇳🇴 Norwegian · 🇸🇪 Swedish · 🇩🇰 Danish · 🇫🇮 Finnish |
+| 🇫🇷 French · 🇪🇸 Spanish · 🇵🇹 Portuguese (Brazil) · 🇮🇹 Italian · 🇭🇷 Croatian |  
+| 🇩🇪 German · 🇳🇱 Dutch · 🇵🇱 Polish · 🇨🇿 Czech · 🇭🇺 Hungarian |
+| 🇷🇴 Romanian · 🇹🇷 Turkish · 🇺🇦 Ukrainian · 🇸🇦 Arabic · 🇬🇷 Greek |
 
 The localisation system is built for easy expansion with additional languages in future releases.
 
