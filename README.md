@@ -27,7 +27,7 @@ FemVoice Studio is built on a single shared, cross-platform interface (Avalonia)
 **Available now:**
 
 - **Windows** desktops and laptops (10 or 11).
-- **macOS** (Apple Silicon or Intel), macOS 11 or newer.
+- **macOS** (Apple Silicon or Intel), macOS 12 or newer.
 - **Android** phones and tablets.
 - **Linux** (x64 or ARM64).
 
@@ -36,8 +36,7 @@ FemVoice Studio is built on a single shared, cross-platform interface (Avalonia)
 - **iPhone / iPad**.
 
 The macOS build is not notarised by Apple, so the first launch needs one extra step — the release notes
-explain it. Listening to your own voice live (the optional monitoring feature) is not available on macOS
-yet; everything else, including microphone analysis, works.
+explain it. It requires macOS 12 or newer.
 
 The layout adapts to the screen: a full multi-column view on larger displays, and a compact layout with collapsible navigation on phones. Your training data lives on each device separately unless you move it yourself.
 
@@ -143,7 +142,7 @@ Exports and support packages are entirely user-controlled. Avoid including perso
 
 ## Requirements
 
-- One of the currently available platforms: Windows 10/11, macOS 11 or newer, Android (5.0 / API 21 or newer), or Linux. The iPhone/iPad version is still in development.
+- One of the currently available platforms: Windows 10/11, macOS 12 or newer, Android (5.0 / API 21 or newer), or Linux. The iPhone/iPad version is still in development.
 - A working microphone. Allow the microphone permission when the app asks for it — without it there is no live feedback. On macOS a refusal is silent rather than an error: the app detects it and tells you where to turn it back on.
 - A reasonably quiet practice environment.
 - The packaged build for your platform, from the [Releases](../../releases) page. The Windows, macOS and Arch Linux builds are self-contained and need no separate runtime; the Debian/Ubuntu `.deb` expects a .NET 10 runtime to be installed. Building from source uses the .NET 10 SDK.
