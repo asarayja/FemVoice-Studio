@@ -27,13 +27,16 @@ FemVoice Studio is built on a single shared, cross-platform interface (Avalonia)
 **Available now:**
 
 - **Windows** desktops and laptops (10 or 11).
+- **macOS** (Apple Silicon or Intel), macOS 12 or newer.
 - **Android** phones and tablets.
 - **Linux** (x64 or ARM64).
 
 **In development (not ready yet):**
 
-- **macOS** (Apple Silicon or Intel).
 - **iPhone / iPad**.
+
+The macOS build is not notarised by Apple, so the first launch needs one extra step — the release notes
+explain it. It requires macOS 12 or newer.
 
 The layout adapts to the screen: a full multi-column view on larger displays, and a compact layout with collapsible navigation on phones. Your training data lives on each device separately unless you move it yourself.
 
@@ -42,13 +45,17 @@ The layout adapts to the screen: a full multi-column view on larger displays, an
 ## What It Does
 
 - Captures real-time voice input from your microphone and displays live pitch and resonance feedback.
+- Shows how your voice currently reads — masculine, androgynous or feminine — from pitch and resonance together, with the single next thing to change.
 - Analyses pitch (Hz), resonance (F1/F2/F3 formants), intonation variation, vocal weight, comfort, and consistency.
 - Provides structured exercises for pitch, resonance, intonation, breathing, and practical speech.
 - Tracks training sessions and scores over time with trend analysis.
 - Adapts training difficulty and focus based on your recent history through SmartCoach.
+- Guides newcomers through a staged "start here" path so the first sessions are not a guess.
+- Reminds you to practise, and tracks how many days you have trained this week.
 - Monitors vocal health signals and prompts rest, hydration, and recovery when needed.
 - Generates PDF, CSV, and JSON reports for personal review or sharing with a professional.
 - Works across your devices with a layout that adapts to each screen.
+- Moves your history between devices by merging a backup, so nothing already recorded is overwritten. Optional Google Drive sync can carry it for you.
 - Supports light mode, dark mode, and system default themes.
 - Available in 20 languages.
 - Stores all data locally on each device.
@@ -125,7 +132,9 @@ The localisation system is built for easy expansion with additional languages in
 
 ## Data and Privacy
 
-FemVoice Studio is local-first. All training data, session history, settings, and notes are stored on your own device. Nothing is sent to external servers.
+FemVoice Studio is local-first. All training data, session history, settings, and notes are stored on your own device, and nothing is sent anywhere by default.
+
+The one exception is opt-in: if you deliberately connect Google Drive to move your progress between devices, your training database is uploaded to a private application folder in your own Drive that only this app can see. It is off unless you set it up, and there is no account, telemetry, or analytics of any kind.
 
 Exports and support packages are entirely user-controlled. Avoid including personal identifiers or sensitive health information in exports unless you intend to share them.
 
@@ -133,10 +142,10 @@ Exports and support packages are entirely user-controlled. Avoid including perso
 
 ## Requirements
 
-- One of the currently available platforms: Windows 10/11, Android (5.0 / API 21 or newer), or Linux. macOS and iPhone/iPad versions are still in development and not ready yet.
-- A working microphone. On phones and tablets, allow the microphone permission when the app asks for it, so live feedback works.
+- One of the currently available platforms: Windows 10/11, macOS 12 or newer, Android (5.0 / API 21 or newer), or Linux. The iPhone/iPad version is still in development.
+- A working microphone. Allow the microphone permission when the app asks for it — without it there is no live feedback. On macOS a refusal is silent rather than an error: the app detects it and tells you where to turn it back on.
 - A reasonably quiet practice environment.
-- The packaged app build for your platform (for example the Windows installer) — it is self-contained, so no separate runtime install is needed. Building from source uses the .NET 10 SDK.
+- The packaged build for your platform, from the [Releases](../../releases) page. The Windows, macOS and Arch Linux builds are self-contained and need no separate runtime; the Debian/Ubuntu `.deb` expects a .NET 10 runtime to be installed. Building from source uses the .NET 10 SDK.
 
 ---
 
@@ -144,8 +153,8 @@ Exports and support packages are entirely user-controlled. Avoid including perso
 
 | Component | Details |
 |---|---|
-| Interface | Avalonia (.NET 10), MVVM — one shared UI across Windows, Linux, and Android |
-| Audio capture | Real time via the platform backend: NAudio (Windows), ALSA (Linux), Android audio; synthetic fallback |
+| Interface | Avalonia (.NET 10), MVVM — one shared UI across Windows, macOS, Linux, and Android |
+| Audio capture | Real time via the platform backend: winmm/NAudio (Windows), AudioQueue/CoreAudio (macOS), ALSA (Linux), AudioRecord (Android); synthetic fallback when no microphone is available |
 | Acoustic analysis | FFT-based pitch detection and formant extraction (F1/F2/F3) |
 | Data | SQLite (Microsoft.Data.Sqlite), local-first |
 | Reports | QuestPDF (PDF) plus CSV and JSON export |
